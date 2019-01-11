@@ -1,0 +1,58 @@
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+router-outlet { display: none; }
+
+.cf:before, .cf:after { content: " "; /* 1 */ display: table; /* 2 */ }
+
+.cf:after { clear: both; }
+
+.cf { *zoom: 1; }
+
+/* 768px; */
+/* 1024px */
+/* 1280px */
+html, body { -webkit-font-smoothing: antialiased; background-color: #ffffff; -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 100%; font-family: "Source Serif Pro", serif; font-size: 100%; line-height: 100%; color: #131313; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+img { width: 100%; height: 100%; }
+
+.container { background-color: rgba(19, 19, 19, 0.05); border: 20px solid #ffffff; -webkit-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 100%; }
+@media screen and (min-width: 48em) { .container { -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
+@media screen and (min-width: 64em) { .container { -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; } }
+
+.content { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; max-width: 616px; padding: 40px 20px 20px 20px; }
+@media screen and (min-width: 64em) { .content { padding: 0 0 0 200px; } }
+
+.logo { height: auto; margin-bottom: 40px; max-width: 458px; }
+@media screen and (min-width: 64em) { .logo { margin-bottom: 80px; } }
+
+.copy { margin-bottom: 50px; }
+
+p { font-size: 17px; font-size: 1.0625rem; line-height: 33.2px; line-height: 2.075rem; font-weight: normal; letter-spacing: -0.2px; margin-bottom: 10px; }
+p:last-of-type { margin-bottom: 0; }
+@media screen and (min-width: 48em) { p { font-size: 17px; font-size: 1.0625rem; line-height: 33.2px; line-height: 2.075rem; } }
+@media screen and (min-width: 64em) { p { font-size: 17px; font-size: 1.0625rem; line-height: 33.2px; line-height: 2.075rem; } }
+
+a.button { background-color: #F06700; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: 0 10px 20px 0 rgba(19, 19, 19, 0.1); box-shadow: 0 10px 20px 0 rgba(19, 19, 19, 0.1); border-radius: 50px; color: #ffffff; display: inline-block; font-weight: 600; letter-spacing: -0.2px; padding: 20px 40px; text-decoration: none; -webkit-transition: background-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; transition: background-color ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; transition: background-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s; transition: background-color ease-in-out 0.1s, box-shadow ease-in-out 0.1s, -webkit-box-shadow ease-in-out 0.1s; }
+a.button:focus { background-color: #ED3B23; -webkit-box-shadow: 0 5px 10px 0 rgba(19, 19, 19, 0.05); box-shadow: 0 5px 10px 0 rgba(19, 19, 19, 0.05); }
+a.button:hover { background-color: #ED3B23; -webkit-box-shadow: 0 5px 10px 0 rgba(19, 19, 19, 0.05); box-shadow: 0 5px 10px 0 rgba(19, 19, 19, 0.05); }
+a.button:active { background-color: #ED3B23; -webkit-box-shadow: 0 5px 10px 0 rgba(19, 19, 19, 0.05); box-shadow: 0 5px 10px 0 rgba(19, 19, 19, 0.05); }
+
+.bold { font-weight: 700; }
+
+.accent { color: #F06700; }

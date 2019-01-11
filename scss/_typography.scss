@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700');
+
+p {
+    @include font-size(17px);
+    @include line-height(33.2px);
+    font-weight: normal;
+    letter-spacing: -0.2px;
+    margin-bottom: 10px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $med) {
+        @include font-size(17px);
+        @include line-height(33.2px);
+    }    
+
+    @media screen and (min-width: $lg) {
+        @include font-size(17px);
+        @include line-height(33.2px);
+    }
+}
+
+a.button {
+    background-color: $primary;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px 0 rgba($dark, 0.1);
+    border-radius: 50px;
+    color: $white;
+    display: inline-block;
+    font-weight: $semiBold;
+    letter-spacing: -0.2px;
+    padding: 20px 40px;
+    text-decoration: none;
+    transition:
+        background-color ease-in-out 0.1s,
+        box-shadow ease-in-out 0.1s;
+
+    &:focus {
+        background-color: $accent;
+        box-shadow: 0 5px 10px 0 rgba($dark, 0.05);
+    }
+    &:hover {
+        background-color: $accent;
+        box-shadow: 0 5px 10px 0 rgba($dark, 0.05);
+    }
+    &:active {
+        background-color: $accent;
+        box-shadow: 0 5px 10px 0 rgba($dark, 0.05);
+    }  
+}
+
+.bold {
+    font-weight: $bold;
+}
+
+.accent {
+    color: $primary;
+}
