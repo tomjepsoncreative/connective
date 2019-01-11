@@ -20,14 +20,14 @@ img {
 // Layout
 
 .container {
-    background-color: $light;
-    border: 20px solid $white;
+    //background-color: $light;
+    //border: 20px solid $white;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    height: 100%;
+    min-height: 100%;
 
     @media screen and (min-width: $med) {
         align-items: center;
@@ -42,24 +42,36 @@ img {
 
 .content {
     flex: 1 1 auto;
-    max-width: 616px;
-    padding: 40px 20px 20px 20px;   
+    padding: 40px 20px 20px 20px;
+
+    @media screen and (min-width: $med) {
+        max-width: 700px;
+    }
 
     @media screen and (min-width: $lg) {
-        padding: 0 0 0 200px;   
+        max-width: 800px;
+        padding: 0 0 0 100px;   
     }
+
+    @media screen and (min-width: $xl) {
+        padding: 0 0 0 200px;   
+    }    
 }
 
 .logo {
     height: auto;
     margin-bottom: 40px;
-    max-width: 458px;
+    max-width: 250px;
+
+    @media screen and (min-width: $med) {
+        max-width: 458px;
+    }   
 
     @media screen and (min-width: $lg) {
-        margin-bottom: 80px;
+        margin-bottom: 70px;
     }    
 }
 
 .copy {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
