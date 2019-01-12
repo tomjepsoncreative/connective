@@ -41,8 +41,8 @@ img { width: 100%; height: 100%; }
 @media screen and (min-width: 80em) { .content { padding: 0 0 0 200px; } }
 
 .logo { height: auto; margin-bottom: 40px; max-width: 250px; }
-@media screen and (min-width: 48em) { .logo { max-width: 458px; } }
-@media screen and (min-width: 64em) { .logo { margin-bottom: 70px; } }
+@media screen and (min-width: 48em) { .logo { max-width: 475px; } }
+@media screen and (min-width: 64em) { .logo { margin-bottom: 70px; max-width: 700px; } }
 
 .copy { margin-bottom: 40px; }
 
