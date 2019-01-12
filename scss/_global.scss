@@ -75,9 +75,14 @@ img {
     }   
 
     @media screen and (min-width: $lg) {
+        margin-bottom: 60px;
+        max-width: 550px;
+    }
+
+    @media screen and (min-width: $xl) {
         margin-bottom: 70px;
         max-width: 700px;
-    }    
+    }      
 }
 
 .copy {
