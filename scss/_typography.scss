@@ -27,30 +27,30 @@ p {
 a.button {
     background-color: transparent;
     box-sizing: border-box;
-    border: 2px solid $primary;
+    border: 3px solid $primary;
     border-radius: 1px;
     color: $primary;
     display: block;
     font-weight: $bold;
     font-size: 16px;
-
-    @media screen and (min-width: $med) {
-        display: inline-block;
-    }    
-
-    @media screen and (min-width: $lg) {
-        @include font-size(20px);
-    }
-
     letter-spacing: -0.25px;
-    padding: 20px 40px 18px 40px;
+    padding: 16px 40px 14px 40px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     transition:
-        background-color ease-in-out 0.1s,
-        border-radius ease-in-out 0.1s,
-        color ease-in-out 0.1s;
+        background-color ease-out 0.2s,
+        border-radius ease-out 0.2s,
+        color ease-out 0.2s;
+
+    @media screen and (min-width: $med) {
+        display: inline-block;
+        padding: 20px 40px 18px 40px;
+    }    
+
+    @media screen and (min-width: $lg) {
+        @include font-size(20px);
+    }        
 
     &:focus {
         background-color: $primary;
