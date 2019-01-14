@@ -31,10 +31,12 @@ html, body { -webkit-font-smoothing: antialiased; background-color: #ffffff; -we
 
 img { width: 100%; height: 100%; }
 
-.container { background-position: 50% 70%; background-repeat: no-repeat; -webkit-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; min-height: 100%; }
-@media screen and (min-width: 48em) { .container { -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-position: 100px 50%; } }
-@media screen and (min-width: 64em) { .container { -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-position: 150% 50%; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; } }
-@media screen and (min-width: 80em) { .container { background-position: right 50%; } }
+body { background-image: url(../images/pattern.svg); background-position: 100% 0%; background-repeat: no-repeat; background-size: cover; }
+@media screen and (min-width: 48em) { body { background-size: contain; } }
+
+.container { -webkit-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; min-height: 100%; }
+@media screen and (min-width: 48em) { .container { -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
+@media screen and (min-width: 64em) { .container { -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; } }
 
 .content { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; padding: 40px 20px 20px 20px; }
 @media screen and (min-width: 48em) { .content { max-width: 700px; } }
@@ -48,12 +50,12 @@ img { width: 100%; height: 100%; }
 
 .copy { margin-bottom: 40px; }
 
-p { font-size: 20px; font-size: 1.25rem; line-height: 33.2px; line-height: 2.075rem; font-weight: normal; letter-spacing: -0.35px; margin-bottom: 10px; }
+p { font-size: 20px; font-size: 1.25rem; line-height: 33.2px; line-height: 2.075rem; background-color: #ffffff; font-weight: normal; letter-spacing: -0.35px; margin-bottom: 10px; }
 p:last-of-type { margin-bottom: 0; }
 @media screen and (min-width: 48em) { p { font-size: 24px; font-size: 1.5rem; line-height: 42.2px; line-height: 2.6375rem; } }
 @media screen and (min-width: 64em) { p { font-size: 32px; font-size: 2rem; line-height: 51.2px; line-height: 3.2rem; } }
 
-a.button { background-color: transparent; -webkit-box-sizing: border-box; box-sizing: border-box; border: 3px solid #F06700; border-radius: 1px; color: #F06700; display: block; font-weight: 700; font-size: 16px; letter-spacing: -0.25px; padding: 16px 40px 14px 40px; text-align: center; text-decoration: none; text-transform: uppercase; -webkit-transition: background-color ease-out 0.2s, border-radius ease-out 0.2s, color ease-out 0.2s; transition: background-color ease-out 0.2s, border-radius ease-out 0.2s, color ease-out 0.2s; }
+a.button { background-color: #ffffff; -webkit-box-sizing: border-box; box-sizing: border-box; border: 3px solid #F06700; border-radius: 1px; color: #F06700; display: block; font-weight: 700; font-size: 16px; letter-spacing: -0.25px; padding: 16px 40px 14px 40px; text-align: center; text-decoration: none; text-transform: uppercase; -webkit-transition: background-color ease-out 0.2s, border-radius ease-out 0.2s, color ease-out 0.2s; transition: background-color ease-out 0.2s, border-radius ease-out 0.2s, color ease-out 0.2s; }
 @media screen and (min-width: 48em) { a.button { display: inline-block; padding: 20px 40px 18px 40px; } }
 @media screen and (min-width: 64em) { a.button { font-size: 20px; font-size: 1.25rem; } }
 a.button:focus { background-color: #F06700; color: #ffffff; }
