@@ -1,7 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,700");
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, .weight, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -40,7 +40,7 @@ body { background-image: url(../images/pattern.svg); background-position: 100% 0
 
 .content { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; padding: 40px 20px 20px 20px; }
 @media screen and (min-width: 48em) { .content { max-width: 700px; } }
-@media screen and (min-width: 64em) { .content { max-width: 800px; padding: 0 0 0 100px; } }
+@media screen and (min-width: 64em) { .content { max-width: 850px; padding: 0 0 0 100px; } }
 @media screen and (min-width: 80em) { .content { padding: 0 0 0 200px; } }
 
 .logo { height: auto; margin-bottom: 40px; max-width: 350px; }
@@ -50,10 +50,12 @@ body { background-image: url(../images/pattern.svg); background-position: 100% 0
 
 .copy { margin-bottom: 40px; }
 
-p { font-size: 20px; font-size: 1.25rem; line-height: 33.2px; line-height: 2.075rem; background-color: #ffffff; font-weight: normal; letter-spacing: -0.35px; margin-bottom: 10px; }
-p:last-of-type { margin-bottom: 0; }
-@media screen and (min-width: 48em) { p { font-size: 24px; font-size: 1.5rem; line-height: 42.2px; line-height: 2.6375rem; } }
-@media screen and (min-width: 64em) { p { font-size: 32px; font-size: 2rem; line-height: 51.2px; line-height: 3.2rem; } }
+p, .weight { font-size: 20px; font-size: 1.25rem; line-height: 33.2px; line-height: 2.075rem; background-color: #ffffff; font-weight: normal; letter-spacing: -0.35px; margin-bottom: 10px; }
+p:last-of-type, .weight:last-of-type { margin-bottom: 0; }
+@media screen and (min-width: 48em) { p, .weight { font-size: 24px; font-size: 1.5rem; line-height: 42.2px; line-height: 2.6375rem; } }
+@media screen and (min-width: 64em) { p, .weight { font-size: 32px; font-size: 2rem; line-height: 51.2px; line-height: 3.2rem; } }
+
+.weight { font-weight: 700; letter-spacing: -1px; }
 
 a.button { background-color: #ffffff; -webkit-box-sizing: border-box; box-sizing: border-box; border: 3px solid #F06700; border-radius: 1px; color: #F06700; display: block; font-weight: 700; font-size: 16px; letter-spacing: -0.25px; padding: 16px 40px 14px 40px; text-align: center; text-decoration: none; text-transform: uppercase; -webkit-transition: background-color ease-out 0.2s, border-radius ease-out 0.2s, color ease-out 0.2s; transition: background-color ease-out 0.2s, border-radius ease-out 0.2s, color ease-out 0.2s; }
 @media screen and (min-width: 48em) { a.button { display: inline-block; padding: 20px 40px 18px 40px; } }
